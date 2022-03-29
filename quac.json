@@ -26,7 +26,7 @@
             "class": "imm"
         },
         "SETH (imm)": {
-            "syntax": "SETH? <Rd:reg>, <IMM8:uint8>",
+            "syntax": "SETH? <RD:reg>, <IMM8:uint8>",
             "machine": "0001 C RD IMM8",
             "semantic": "RD := (IMM8 << 8) | (RD & 0xFF)",
             "description": "Replaces the upper byte of RD with IMM8, leaving the lower byte unchanged",
