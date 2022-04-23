@@ -36,20 +36,6 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>ALUOP</string>
-        </entry>
-        <entry>
-          <string>Bits</string>
-          <int>2</int>
-        </entry>
-      </elementAttributes>
-      <pos x="740" y="780"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Out</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Label</string>
           <string>DMUX</string>
         </entry>
         <entry>
@@ -58,6 +44,20 @@
         </entry>
       </elementAttributes>
       <pos x="740" y="1100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ALUOP</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="740" y="780"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
