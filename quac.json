@@ -136,6 +136,14 @@
             "description": "Jump to the given immediate value address. (alias for `MOVL PC, IMM8`)",
             "pseudo": true,
             "class": "imm"
+        },
+        "LD (imm)": {
+            "syntax": "LD? <RD:reg>, <IMM8:uint8>",
+            "machine": "0010 C RD IMM8",
+            "semantic": "RD := mem[IMM8]",
+            "description": "Loads the 16 bit value at the address IMM8 into RD",
+            "pseudo": false,
+            "class": "mem"
         }
     }
 }
