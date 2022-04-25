@@ -137,13 +137,21 @@
             "pseudo": true,
             "class": "imm"
         },
-        "LD (imm)": {
-            "syntax": "LD? <RD:reg>, <IMM8:uint8>",
+        "STI (imm)": {
+            "syntax": "STI? <RD:reg>, <IMM8:uint8>",
             "machine": "0010 C RD IMM8",
+            "semantic": "mem[IMM8] := RD",
+            "description": "Stores the value in RD in memory at the address IMM8",
+            "pseudo": false,
+            "class": "imm"
+        },
+        "LDI (imm)": {
+            "syntax": "LDI? <RD:reg>, <IMM8:uint8>",
+            "machine": "0011 C RD IMM8",
             "semantic": "RD := mem[IMM8]",
             "description": "Loads the 16 bit value at the address IMM8 into RD",
             "pseudo": false,
-            "class": "mem"
+            "class": "imm"
         }
     }
 }

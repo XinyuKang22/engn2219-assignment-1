@@ -3,10 +3,6 @@
   <version>1</version>
   <attributes>
     <entry>
-      <string>Label</string>
-      <string>LDI</string>
-    </entry>
-    <entry>
       <string>shapeType</string>
       <shapeType>LAYOUT</shapeType>
     </entry>
@@ -23,15 +19,15 @@
       <string>Height</string>
       <int>6</int>
     </entry>
-    <entry>
-      <string>Width</string>
-      <int>2</int>
-    </entry>
   </attributes>
   <visualElements>
     <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
         <entry>
           <string>Label</string>
           <string>o1</string>
@@ -40,10 +36,6 @@
           <string>Bits</string>
           <int>16</int>
         </entry>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="3"/>
-        </entry>
       </elementAttributes>
       <pos x="360" y="140"/>
     </visualElement>
@@ -51,12 +43,12 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>en</string>
-        </entry>
-        <entry>
           <string>rotation</string>
           <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>en</string>
         </entry>
       </elementAttributes>
       <pos x="560" y="340"/>
@@ -83,16 +75,16 @@
       <elementName>Out</elementName>
       <elementAttributes>
         <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
           <string>Label</string>
           <string>1a</string>
         </entry>
         <entry>
           <string>Bits</string>
           <int>16</int>
-        </entry>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="3"/>
         </entry>
       </elementAttributes>
       <pos x="340" y="460"/>
@@ -155,16 +147,16 @@
       <elementName>Multiplexer</elementName>
       <elementAttributes>
         <entry>
-          <string>flipSelPos</string>
-          <boolean>true</boolean>
+          <string>rotation</string>
+          <rotation rotation="3"/>
         </entry>
         <entry>
           <string>Bits</string>
           <int>16</int>
         </entry>
         <entry>
-          <string>rotation</string>
-          <rotation rotation="3"/>
+          <string>flipSelPos</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="360" y="320"/>
@@ -175,7 +167,7 @@
         <entry>
           <string>Testdata</string>
           <testData>
-            <dataString>LDI	OUT1	INST	1A
+            <dataString>en	o1	inst	1a
 let ldiop = 0b0010;
 
 loop(i, 100)

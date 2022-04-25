@@ -16,6 +16,10 @@
       </awt-color>
     </entry>
     <entry>
+      <string>Label</string>
+      <string>Register File</string>
+    </entry>
+    <entry>
       <string>Height</string>
       <int>15</int>
     </entry>
